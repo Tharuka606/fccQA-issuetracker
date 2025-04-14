@@ -1,0 +1,68 @@
+modules = ["nodejs-20", "web"]
+run = "npm run start"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm run start"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[[ports]]
+localPort = 32917
+externalPort = 8099
+
+[[ports]]
+localPort = 33045
+externalPort = 8080
+
+[[ports]]
+localPort = 33857
+externalPort = 3000
+
+[[ports]]
+localPort = 33983
+externalPort = 6000
+
+[[ports]]
+localPort = 34005
+externalPort = 5173
+
+[[ports]]
+localPort = 36753
+externalPort = 3003
+
+[[ports]]
+localPort = 37001
+externalPort = 8000
+
+[[ports]]
+localPort = 38135
+externalPort = 5000
+
+[[ports]]
+localPort = 38467
+externalPort = 6800
+
+[[ports]]
+localPort = 40033
+externalPort = 4200
+
+[[ports]]
+localPort = 40689
+externalPort = 8008
+
+[[ports]]
+localPort = 40693
+externalPort = 3002
+
+[[ports]]
+localPort = 43621
+externalPort = 8081
+
+[[ports]]
+localPort = 44035
+externalPort = 3001
